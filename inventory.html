@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory</title>
+  <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+
+  <!-- Header (Centered Logo, No Nav) -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Datacats<span class="dot">.</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Your Collectible Inventory</h1>
+        <p>Unlock, collect, and showcase your digital cards.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inventory Grid Section -->
+  <section class="inventory">
+    <div class="container">
+      <h2>Your Collection</h2>
+      <div class="card-grid">
+        <!-- 25 Empty Slots (Some with Tooltips) -->
+        <div class="card-slot locked" id="slot1"><span class="tooltip">Find the hidden cat to unlock this!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Earn this by reaching 5 visits!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Complete the IT Support page quiz!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Visit the Cybersecurity page!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Solve the Cloud Security Puzzle!</span></div>
+        
+        <div class="card-slot locked"><span class="tooltip">Click the logo 10 times!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Unlock this by finding the Easter Egg!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Share this page to unlock!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Reach 100 total visits!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Explore the Network Management page!</span></div>
+        
+        <div class="card-slot locked"><span class="tooltip">Decrypt the hidden code!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Find all the secret messages!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Earn this by submitting a contact form!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Unlock this by clicking the hidden button!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Check out the IT Support tutorials!</span></div>
+        
+        <div class="card-slot locked"><span class="tooltip">Solve the hacking mini-game!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Log in 3 times in a row!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Watch the tutorial video!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Visit the website at midnight!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Earn this by clicking the cat!</span></div>
+        
+        <div class="card-slot locked"><span class="tooltip">Hack into the secret page!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Find all 3 hidden passwords!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Unlock this by trying to inspect element!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Post about this site on social media!</span></div>
+        <div class="card-slot locked"><span class="tooltip">Find the "glitch" card!</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card Preview Popup (Initially Hidden) -->
+  <div id="card-popup">
+    <div class="card-popup-content">
+      <img id="popup-card-img" src="" alt="Card Preview">
+    </div>
+  </div>
+
+  <!-- JavaScript for Inventory Logic -->
+  <script src="inventory.js"></script>
+</body>
+</html>

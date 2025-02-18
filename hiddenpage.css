@@ -1,0 +1,255 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: black; /* Base color behind the matrix */
+  color: #00ff88; /* Hacker green */
+  line-height: 1.6;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Matrix Background */
+#matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Bring it above all backgrounds */
+  pointer-events: auto; /* Canvas should capture mouse events */
+  opacity: 0.08; /* Adjust visibility as needed */
+  background: black; /* Optional: Ensure background is dark enough */
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center everything */
+  position: relative;
+  padding: 20px 0;
+  height: 80px; /* Ensure the header has a fixed height */
+  background: rgba(10, 15, 36, 0.9);
+  backdrop-filter: blur(10px);
+  top: 0;
+  z-index: 100;
+}
+
+/* Center the logo */
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 20px; /* Moves it up (adjust as needed) */
+  transform: translateX(-50%);
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #00ff88;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ff88;
+}
+
+/* Unlock Popup - Larger, No Border, Super Smooth Slide-In */
+#unlock-popup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: rgba(0, 204, 255, 0.9);
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: none;
+  opacity: 0;
+  transform: translateY(150px); /* Start lower */
+  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+  z-index: 1000;
+}
+
+/* Show popup animation */
+#unlock-popup.show {
+  transform: translateY(0); /* Move into view smoothly */
+  opacity: 1;
+}
+
+
+/* Popup Image - Bigger Card */
+#unlock-popup img {
+  width: 80px;  /* 🔹 Double the width */
+  height: 120px; /* 🔹 Double the height */
+  border-radius: 8px;
+}
+
+
+
+/* Cybersecurity-Style Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.2), transparent);
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #00ff88;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #00ff88, #00d4ff);
+  color: #0a0f24;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 255, 136, 0.5);
+}
+
+.btn-secondary {
+  padding: 12px 30px;
+  border: 2px solid #00ff88;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #00ff88;
+  transform: scale(1.05);
+}
+
+/* Services Section (Cybersecurity Themed) */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #00ff88;
+}
+
+.services-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 255, 136, 0.4);
+}
+
+.service-card h3 {
+  font-size: 20px;
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+.btn-service {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00d4ff, #00ff88);
+  color: #0a0f24;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 255, 136, 0.5);
+}
