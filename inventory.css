@@ -47,7 +47,7 @@ body {
   background: linear-gradient(135deg, #0d6efd, #1b233a);
 }
 
-.hero-text h1 {
+.hero-content h1 {
   font-size: 48px;
   font-weight: 700;
   background: linear-gradient(90deg, #00d4ff, #00ff88);
@@ -55,12 +55,131 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.hero-text p {
+.hero-content p {
   font-size: 18px;
   color: #f0f0f0;
 }
 
+/* Floating Cards Container */
+.floating-cards-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* Prevents user interaction */
+  z-index: 1;
+}
+
+/* Floating Card */
+.floating-card {
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  opacity: 0.4;
+  transform: translateX(-100px); /* Start off-screen on the left */
+}
+
+/* Secret Code Popup */
+#secret-code-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(10, 15, 36, 0.95); /* Dark Theme */
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2000;
+  box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Smooth Fade-In */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -55%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+.secret-popup-content p {
+  color: #00d4ff; /* Ice Blue Text */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#secret-code-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #00ff88;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+
+#secret-code-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#submit-secret {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00d4ff, #00ff88);
+  color: #0a0f24;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#submit-secret:hover {
+  box-shadow: 0 4px 10px rgba(0, 255, 136, 0.5);
+  transform: scale(1.05);
+}
+
+/* Unlock Popup - Larger, No Border, Super Smooth Slide-In */
+#unlock-popup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: rgba(0, 204, 255, 0.9);
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: none;
+  opacity: 0;
+  transform: translateY(150px); /* Start lower */
+  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+  z-index: 1000;
+}
+
+/* Show popup animation */
+#unlock-popup.show {
+  transform: translateY(0); /* Move into view smoothly */
+  opacity: 1;
+}
+
+
+/* Popup Image - Bigger Card */
+#unlock-popup img {
+  width: 80px;  /* 🔹 Double the width */
+  height: 120px; /* 🔹 Double the height */
+  border-radius: 8px;
+}
+
 /* Inventory Section */
+
 .inventory {
   padding: 60px 20px;
   text-align: center;
@@ -197,6 +316,7 @@ body {
   }
 }
 
+
 /* Card Popup - Hidden by Default */
 /* Card Popup - Hidden by Default */
 #card-popup {
@@ -262,6 +382,37 @@ body {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* Go to Shop Button */
+.shop-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #00d4ff, #00ff88);
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover Effect */
+.shop-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+}
+
+/* Responsive Centering */
+@media screen and (max-width: 768px) {
+  .shop-button {
+    font-size: 16px;
+    padding: 10px 20px;
   }
 }
 

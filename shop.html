@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Shop</title>
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+  <header>
+    <h1>🛒 Card Shop</h1>
+    <p>Coins: <span id="coin-count">0</span></p>
+  </header>
+
+  <div class="shop-container">
+    <!-- Rotating Buyable Cards -->
+    <div class="card-shop">
+      <h2>Today's Featured Cards</h2>
+      <div class="card-list"></div>
+      <p class="refresh-timer">Next refresh in: <span id="timer"></span></p>
+    </div>
+
+    <!-- Buy Random Packs -->
+    <div class="pack-section">
+      <h2>Buy Card Packs</h2>
+      <div class="pack-buttons">
+        <button class="buy-pack standard-pack" data-pack="standard">
+          <span class="pack-title">Standard Pack</span>
+          <span class="pack-price">500 Coins</span>
+        </button>
+        <button class="buy-pack premium-pack" data-pack="premium">
+          <span class="pack-title">Premium Pack</span>
+          <span class="pack-price">1250 Coins</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="inventory.html" class="return-button">⬅ Back to Inventory</a>
+
+  <script src="shop.js"></script>
+</body>
+</html>

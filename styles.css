@@ -258,7 +258,7 @@ body.slide-out {
   justify-content: center;
   min-height: 100vh;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #0d6efd, #1b233a);
+  background: linear-gradient(135deg, #26eee4, #314353);
   color: white;
   position: relative;
   overflow: hidden;
@@ -374,8 +374,7 @@ body.slide-out {
 .hero-graphic img {
   max-width: 100%;
   height: auto;
-  box-shadow: 0 0 50px 50px rgba(0, 13, 36, 0.7);
-  border-radius: 12px; /* Optional: Add rounded corners for a softer look */
+  filter: drop-shadow(0px 0px 40px rgba(0,0,0)); /* Neon glow effect */
   animation: float 5s ease-in-out infinite;
 }
 
