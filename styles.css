@@ -40,7 +40,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #00d4ff;
+  color: #26eee4;
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -116,7 +116,7 @@ body.slide-out {
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  background: linear-gradient(90deg, #00d4ff, #00ff88);
+  background: linear-gradient(90deg, #26eee4, #00ff88);
   color:  rgba(10, 15, 36, 0.9);
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -192,7 +192,7 @@ body.slide-out {
 }
 
 .cta {
-  background: linear-gradient(90deg, #00d4ff, #121a3e);
+  background: linear-gradient(90deg, #26eee4, #121a3e);
   color: #0a0f24;
   padding: 8px 15px;
   border-radius: 20px;
@@ -271,7 +271,7 @@ body.slide-out {
   right: -50px;
   width: 300px;
   height: 300px;
-  background: linear-gradient(135deg, #00d4ff, #00ff88);
+  background: linear-gradient(135deg, #26eee4, #00ff88);
   opacity: 0.2;
   border-radius: 50%;
   filter: blur(80px);
@@ -284,7 +284,7 @@ body.slide-out {
   left: -50px;
   width: 200px;
   height: 200px;
-  background: linear-gradient(135deg, #00ff88, #00d4ff);
+  background: linear-gradient(135deg, #00ff88, #26eee4);
   opacity: 0.2;
   border-radius: 50%;
   filter: blur(80px);
@@ -311,7 +311,7 @@ body.slide-out {
   line-height: 1.2;
   margin-bottom: 20px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #00d4ff, #00ff88);
+  background: linear-gradient(90deg, #000000, #496278);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -329,7 +329,7 @@ body.slide-out {
 
 .btn-primary {
   padding: 12px 30px;
-  background: linear-gradient(90deg, #00d4ff, #00ff88);
+  background: linear-gradient(90deg, #26eee4, #00ff88);
   color: #0a0f24;
   font-weight: 600;
   border: none;
@@ -398,7 +398,7 @@ body.slide-out {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #00d4ff;
+  color: #26eee4;
 }
 .services .service-list {
   display: flex;
@@ -438,7 +438,7 @@ body.slide-out {
 .btn-service {
   display: inline-block;
   padding: 10px 20px;
-  background: linear-gradient(90deg, #00d4ff, #00ff88);
+  background: linear-gradient(90deg, #26eee4, #00ff88);
   color: #0a0f24;
   font-weight: 600;
   text-transform: uppercase;
@@ -462,7 +462,7 @@ body.slide-out {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #00d4ff;
+  color: #26eee4;
 }
 .testimonials .testimonial-list {
   display: flex;
@@ -496,7 +496,7 @@ body.slide-out {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #00d4ff;
+  color: #26eee4;
 }
 .contact-form input, .contact-form textarea {
   width: 100%;
@@ -509,7 +509,7 @@ body.slide-out {
 }
 .contact-form button {
   padding: 12px 30px;
-  background: linear-gradient(90deg, #00d4ff, #00ff88);
+  background: linear-gradient(90deg, #26eee4, #00ff88);
   color: #0a0f24;
   border: none;
   border-radius: 30px;

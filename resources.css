@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #0a0f24, #121a3e);
+  color: #f0f0f0;
+  line-height: 1.6;
+  margin: 0; /* Prevents unwanted space around the body */
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  background: rgba(10, 15, 36, 0.9);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  width: 100%; /* Ensures it stretches across the screen */
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.header:hover {
+  background: rgba(15, 20, 50, 1); /* Slightly darker background on hover */
+}
+
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #26eee4;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo a span {
+  color: #00ff88; /* Accent color for the period */
+}
+
+.logo a:hover {
+  color: #00ff88;
+  transform: rotate(5deg) scale(1.1); /* Playful hover effect */
+}
+
+/* Secondary Menu */
+.secondary-menu {
+  text-align: center;
+  margin-bottom: 10px; /* Offset from the main menu */
+}
+
+/* Secondary Menu */
+
+.secondary-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.secondary-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(90deg, #26eee4, #00ff88);
+  color:  rgba(10, 15, 36, 0.9);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secondary-links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 255, 136, 0.5);
+}
+
+.secondary-links a:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(10, 15, 36, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #26eee4, #314353);
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Ensure the page does not overlap the header */
+.resources-container {
+  max-width: 800px;
+  margin: 100px auto 0 auto; /* Push content below the fixed header */
+  text-align: left;
+}
+
+/* Resource Sections */
+.resource-category {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 255, 136, 0.4);
+}
+
+/* Center the Title and Subtitle */
+.resources-title,
+.resources-subtitle {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px; /* Adds spacing below */
+}
+/* Category Titles */
+.resource-category h2 {
+  font-size: 24px;
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.resource-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-category li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.resource-category a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.resource-category a:hover {
+  color: #00ff88;
+  text-shadow: 0px 0px 5px rgba(0, 255, 136, 0.8);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.7;
+}

@@ -120,7 +120,7 @@ function generateFloatingCards(unlockedCards) {
 // Function to move cards left to right, then restart
 function moveCardAcrossScreen(card, screenWidth) {
   function move() {
-    const speed = 8000 + Math.random() * 5000; // Different speed per card (8-13s)
+    const speed = 8000 + Math.random() * 10000; // Different speed per card (8-18s)
     card.style.transition = `transform ${speed}ms linear`;
     card.style.transform = `translateX(${screenWidth + 100}px)`; // Move off-screen right
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro CRT Computer</title>
+  <link rel="stylesheet" href="crt.css">
+</head>
+  <body>
+
+    <div class="crt-wrapper">
+      <!-- Clickable Datacats Title -->
+      <a href="index.html" class="datacats-title">DATACATS</a>
+
+      <div class="crt-container">
+        <div class="crt-screen">
+          <div class="crt-static"></div> <!-- Static Effect -->
+          <div class="crt-overlay"></div> <!-- Green Glow -->
+          <div class="crt-filter"></div>  <!-- Green CRT Filter -->
+
+          <!-- Happiness Bar (Top Right) -->
+          <div class="happiness-container">
+            <p>Happiness</p>
+            <div class="happiness-bar">
+              <div id="happiness-fill"></div>
+            </div>
+          </div>
+
+
+          <!-- Game Buttons (Left Side) -->
+          <div class="game-buttons">
+            <button id="feed-button">🍖 Feed</button>
+            <button id="play-button">🎾 Play</button>
+            <button id="sleep-button">💤 Sleep</button>
+          </div>
+          
+          <!-- Game Area -->
+          <div class="game-container" id="game-container">
+            <img src="BlackCat.gif" alt="Datacat" id="datacat" class="datacat">
+          </div>
+
+        </div>
+        <button class="power-button" id="power-button"></button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+    <script src="crt.js"></script>
+  </body>
+
+</html>
+
+
