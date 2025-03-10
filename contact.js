@@ -12,7 +12,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
   // GitHub Issue Data
   const repoOwner = "itiswhat-it-is"; // 🔹 Replace with your GitHub username
-  const repoName = "Datacats-Website"; // 🔹 Replace with your repository name
+  const repoName = "itiswhat-it-is/Datacats-Website"; // 🔹 Replace with your repository name
   const issueTitle = `New Message from ${name}`;
   const issueBody = `**Name:** ${name}\n\n**Message:**\n${message}`;
 
