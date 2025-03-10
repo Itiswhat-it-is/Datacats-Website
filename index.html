@@ -105,11 +105,11 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Us</h2>
-        <p>Let us know if there is anything we can do better, any resources you would like to share, or anything you'd like to learn about. If we pick it up we will make sure to post it in our updates page!</p>
-      <form action="#" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+        <p>Let us know if there is anything we can do better, any resources you would like to share, or anything you'd like to learn about. If we pick it up we will make sure to post it in our updates page! *Note: This will open a new tab to GitHub Issues. Simply hit the 'Create' button once redirected to send your message!</p>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
       <p id="form-response"></p> <!-- Displays submission status -->
     </div>
